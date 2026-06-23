@@ -1,162 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Engineer Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .code-font { font-family: 'Fira Code', monospace; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-    </style>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Md Shehab Kazi | Solution Architect & Senior DevOps Engineer</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+          body { font-family: 'Plus Jakarta Sans', sans-serif; }
+          .code-font { font-family: 'Fira Code', monospace; }
+          .glass { background: rgba(5, 8, 22, 0.7); backdrop-filter: blur(16px); border: 1px solid rgba(99, 102, 241, 0.08); }
+          .glass-card { background: linear-gradient(135deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.02) 100%); border: 1px solid rgba(255, 255, 255, 0.04); }
+          .tech-grid { background-size: 50px 50px; background-image: linear-gradient(to right, rgba(99, 102, 241, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(99, 102, 241, 0.02) 1px, transparent 1px); }
+     </style>
 </head>
-<body class="bg-[#0f172a] text-slate-300 antialiased selection:bg-indigo-500/30">
+<body class="bg-[#040712] text-slate-300 antialiased selection:bg-indigo-500/30 tech-grid">
 
-    <nav class="fixed top-0 w-full z-50 glass">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-white font-bold text-xl code-font">Md Shehab Kazi~/DevOps-engineer</span>
-            <div class="space-x-8 hidden md:flex text-sm font-medium tracking-wide">
-                <a href="#about" class="hover:text-indigo-400 transition">About</a>
-                <a href="#skills" class="hover:text-indigo-400 transition">Tech Stack</a>
-                <a href="#projects" class="hover:text-indigo-400 transition">Infrastructure</a>
-                <a href="#contact" class="px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 transition">Get in Touch</a>
-            </div>
-        </div>
-    </nav>
-<!-- Hero section -->
+     <!-- Top Sticky Navigation -->
+     <nav class="fixed top-0 w-full z-50 glass border-b border-white/5">
+          <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+               <div class="flex items-center space-x-3">
+                    <div class="h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></div>
+                    <span class="text-white font-bold tracking-tight text-sm code-font">devops://engine_prime</span>
+               </div>
+               <div class="space-x-8 hidden md:flex text-xs font-semibold tracking-wider uppercase">
+                    <a href="#about" class="text-slate-400 hover:text-white transition">01. Node//Profile</a>
+                    <a href="#skills" class="text-slate-400 hover:text-white transition">02. Core//Stack</a>
+                    <a href="#projects" class="text-slate-400 hover:text-white transition">03. Eng//Impact</a>
+                    <a href="#contact" class="px-4 py-2 bg-indigo-600/90 text-white rounded-md border border-indigo-400/30 hover:bg-indigo-600 transition shadow-[0_0_15px_rgba(99,102,241,0.25)]">Get in Touch</a>
+               </div>
+          </div>
+     </nav>
 
-    <header class="pt-32 pb-20 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <div class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-indigo-400 uppercase bg-indigo-400/10 rounded-full border border-indigo-400/20">
-                Available for new opportunities
-            </div>
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-                Automating <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Reliability</span> at Scale.
-            </h1>
-            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Specializing in bridging the gap between development and operations through robust CI/CD, Infrastructure as Code, and Cloud Native solutions.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#projects" class="px-8 py-4 bg-white text-slate-900 font-bold rounded-xl hover:bg-slate-200 transition">View My Work</a>
-                <a href="#skills" class="px-8 py-4 glass text-white font-bold rounded-xl hover:bg-white/5 transition">Technical Skills</a>
-            </div>
-        </div>
-    </header>
-<!-- Hero section -->
+     <!-- Hero Section -->
+     <header class="pt-48 pb-32 px-6 relative overflow-hidden">
+          <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-indigo-600/10 blur-[130px] rounded-full pointer-events-none"></div>
+          <div class="absolute top-1/3 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-cyan-600/5 blur-[110px] rounded-full pointer-events-none"></div>
+          
+          <div class="max-w-4xl mx-auto text-center relative z-10">
+               <div class="inline-flex items-center space-x-2 px-3 py-1.5 mb-8 text-[11px] font-medium tracking-widest text-indigo-300 uppercase bg-indigo-500/10 rounded-md border border-indigo-500/20 code-font">
+                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-400 animate-ping"></span>
+                    <span>Infrastructure State: Ready for Deployment</span>
+               </div>
+               <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tighter leading-none">
+                    Automating <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400">Reliability</span> at Scale.
+               </h1>
+               <p class="text-base md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
+                    Senior Solution Architect & DevOps Engineer specializing in building scalable enterprise-grade infrastructures, high-throughput automation pipelines, and robust telemetry networks.
+               </p>
+               <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#projects" class="w-full sm:w-auto px-8 py-4 bg-white text-slate-950 font-bold rounded-lg hover:bg-slate-100 transition text-sm tracking-wide shadow-lg">Evaluate My Infrastructure</a>
+                    <a href="#about" class="w-full sm:w-auto px-8 py-4 glass text-white font-medium rounded-lg hover:bg-white/5 transition text-sm tracking-wide border border-white/10">System Engineering Details</a>
+               </div>
+          </div>
+     </header>
 
-    <header class="pt-32 pb-20 px-6">
-        <div class="max-w-4xl mx-auto text-center">
-            <div class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-indigo-400 uppercase bg-indigo-400/10 rounded-full border border-indigo-400/20">
-                Available for new opportunities
-            </div>
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-                Automating <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Reliability</span> at Scale.
-            </h1>
-            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Specializing in bridging the gap between development and operations through robust CI/CD, Infrastructure as Code, and Cloud Native solutions.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#projects" class="px-8 py-4 bg-white text-slate-900 font-bold rounded-xl hover:bg-slate-200 transition">View My Work</a>
-                <a href="#skills" class="px-8 py-4 glass text-white font-bold rounded-xl hover:bg-white/5 transition">Technical Skills</a>
-            </div>
-        </div>
-    </header>
+     <!-- Core Infrastructure Metrics Dashboard -->
+     <section class="pb-24 px-6">
+          <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+               <div class="glass-card p-6 rounded-xl border border-white/5">
+                    <span class="text-xs text-slate-500 block mb-1 code-font">INFRASTRUCTURE_XP</span>
+                    <span class="text-3xl font-bold text-white tracking-tight">10+ Years</span>
+               </div>
+               <div class="glass-card p-6 rounded-xl border border-white/5">
+                    <span class="text-xs text-slate-500 block mb-1 code-font">SOFTWARE_ENG</span>
+                    <span class="text-3xl font-bold text-indigo-400 tracking-tight">1+ Years</span>
+               </div>
+               <div class="glass-card p-6 rounded-xl border border-white/5">
+                    <span class="text-xs text-slate-500 block mb-1 code-font">DEPLOYMENT_SPEED</span>
+                    <span class="text-3xl font-bold text-emerald-400 tracking-tight">3x Faster</span>
+               </div>
+               <div class="glass-card p-6 rounded-xl border border-white/5">
+                    <span class="text-xs text-slate-500 block mb-1 code-font">DOWNTIME_REDUCTION</span>
+                    <span class="text-3xl font-bold text-cyan-400 tracking-tight">40% Drop</span>
+               </div>
+          </div>
+     </section>
 
-    <!-- Skills section -->
-
-    <section id="skills" class="py-20 px-6 bg-slate-900/50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
-                <span class="text-indigo-500 mr-4 text-2xl">01.</span> Technical Arsenal
-            </h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="p-6 glass rounded-2xl hover:border-indigo-500/50 transition group">
-                    <i class="fa-brands fa-docker text-3xl text-indigo-400 mb-4 group-hover:scale-110 transition"></i>
-                    <h3 class="text-white font-semibold mb-2">Containerization</h3>
-                    <p class="text-xs text-slate-500">Docker, Kubernetes, Helm</p>
-                </div>
-                <div class="p-6 glass rounded-2xl hover:border-indigo-500/50 transition group">
-                    <i class="fa-solid fa-cloud text-3xl text-indigo-400 mb-4 group-hover:scale-110 transition"></i>
-                    <h3 class="text-white font-semibold mb-2">Cloud Platforms</h3>
-                    <p class="text-xs text-slate-500">AWS, Azure, GCP</p>
-                </div>
-                <div class="p-6 glass rounded-2xl hover:border-indigo-500/50 transition group">
-                    <i class="fa-solid fa-code-merge text-3xl text-indigo-400 mb-4 group-hover:scale-110 transition"></i>
-                    <h3 class="text-white font-semibold mb-2">CI/CD Pipelines</h3>
-                    <p class="text-xs text-slate-500">GitHub Actions, Jenkins, GitLab</p>
-                </div>
-                <div class="p-6 glass rounded-2xl hover:border-indigo-500/50 transition group">
-                    <i class="fa-solid fa-terminal text-3xl text-indigo-400 mb-4 group-hover:scale-110 transition"></i>
-                    <h3 class="text-white font-semibold mb-2">Automation</h3>
-                    <p class="text-xs text-slate-500">Terraform, Ansible, Python</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!-- projects section -->
-    <section id="projects" class="py-20 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
-                <span class="text-indigo-500 mr-4 text-2xl">02.</span> Projects & Impact
-            </h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="group relative overflow-hidden rounded-3xl glass p-8">
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="p-3 bg-indigo-500/10 rounded-lg">
-                            <i class="fa-solid fa-network-wired text-indigo-400 text-2xl"></i>
-                        </div>
-                        <a href="#" class="text-slate-400 hover:text-white transition"><i class="fa-brands fa-github text-2xl"></i></a>
+     <!-- About Section -->
+     <section id="about" class="py-28 px-6 bg-[#060914]/90 border-t border-b border-white/5">
+          <div class="max-w-6xl mx-auto">
+               <div class="flex items-center space-x-4 mb-16">
+                    <span class="text-xs font-bold font-mono text-indigo-500 tracking-widest bg-indigo-500/10 px-2.5 py-1 rounded">01</span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">System Engineer Core Profile</h2>
+                    <div class="h-[1px] bg-gradient-to-r from-white/10 to-transparent flex-grow"></div>
+               </div>
+               
+               <div class="grid md:grid-cols-3 gap-12 items-start">
+                    <div class="md:col-span-2 space-y-6 text-slate-400 text-base md:text-lg font-light leading-relaxed">
+                         <p>
+                              Hello! I am <span class="text-white font-semibold">Md Shehab Kazi</span>, a Lead Architect and DevOps Specialist based in Dhaka, Bangladesh. With over a decade of hands-on experience running enterprise system administration and infrastructure operations, I bridge the critical gap between bare-metal stability and modern, cloud-native scalability.
+                         </p>
+                         <p>
+                              My technical trajectory shifted powerfully into advanced software engineering, backed by rigorous development strategies from **BongoDev**. This combination allows me to approach DevOps not just as a consumer of tools, but from a software perspective—writing cleaner automated runbooks, developing advanced telemetry mechanisms, and building sophisticated multi-region infrastructure patterns.
+                         </p>
+                         <p class="text-sm border-l-2 border-indigo-500 pl-4 py-1 bg-indigo-500/5 text-slate-300 italic rounded-r-md">
+                              "Treating manual server configurations as technical debt—I design high-availability architectures focusing on immutable systems, automated orchestration, and resilient observability loops."
+                         </p>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Multi-Region K8s Cluster</h3>
-                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                        Implemented a high-availability Kubernetes infrastructure across AWS regions using Terraform and EKS, reducing downtime by 40%.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-[10px] font-bold uppercase tracking-wider">
-                        <span class="px-2 py-1 bg-slate-800 rounded">Terraform</span>
-                        <span class="px-2 py-1 bg-slate-800 rounded">AWS</span>
-                        <span class="px-2 py-1 bg-slate-800 rounded">Kubernetes</span>
+                    
+                    <!-- Tech Profile Card Component -->
+                    <div class="glass p-6 rounded-2xl border border-white/5 relative group overflow-hidden">
+                         <div class="absolute top-0 right-0 p-2 bg-indigo-500/10 rounded-bl-xl border-l border-b border-white/5 text-[10px] text-indigo-400 font-mono">SYS_INF__</div>
+                         <h3 class="text-white font-bold text-sm uppercase tracking-wider mb-6 code-font flex items-center"><i class="fa-solid fa-server mr-2 text-indigo-400"></i> Running Metadata</h3>
+                         <ul class="space-y-4 text-xs font-mono text-slate-400">
+                              <li class="flex justify-between border-b border-white/5 pb-2"><span>[ARCHITECTURE]</span><span class="text-white font-medium">Lead Architect</span></li>
+                              <li class="flex justify-between border-b border-white/5 pb-2"><span>[LINUX_DISTRO]</span><span class="text-indigo-400">Ubuntu / Enterprise Linux</span></li>
+                              <li class="flex justify-between border-b border-white/5 pb-2"><span>[ORCHESTRATION]</span><span class="text-cyan-400">Kubernetes & Docker Fabrics</span></li>
+                              <li class="flex justify-between border-b border-white/5 pb-2"><span>[TELEMETRY]</span><span class="text-emerald-400">Server-Side Tracking / CAPI</span></li>
+                              <li class="flex justify-between"><span>[AVAILABILITY]</span><span class="text-white">Remote & International Roles</span></li>
+                         </ul>
                     </div>
-                </div>
+               </div>
+          </div>
+     </section>
 
-                <div class="group relative overflow-hidden rounded-3xl glass p-8">
-                    <div class="flex justify-between items-start mb-6">
-                        <div class="p-3 bg-cyan-500/10 rounded-lg">
-                            <i class="fa-solid fa-bolt text-cyan-400 text-2xl"></i>
-                        </div>
-                        <a href="#" class="text-slate-400 hover:text-white transition"><i class="fa-brands fa-github text-2xl"></i></a>
+     <!-- Skills Section -->
+     <section id="skills" class="py-28 px-6">
+          <div class="max-w-6xl mx-auto">
+               <div class="flex items-center space-x-4 mb-16">
+                    <span class="text-xs font-bold font-mono text-indigo-500 tracking-widest bg-indigo-500/10 px-2.5 py-1 rounded">02</span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Technical Capability Stack</h2>
+                    <div class="h-[1px] bg-gradient-to-r from-white/10 to-transparent flex-grow"></div>
+               </div>
+               
+               <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="p-6 glass-card rounded-xl hover:border-indigo-500/30 transition duration-300 group">
+                         <div class="h-10 w-10 rounded-lg bg-indigo-500/5 flex items-center justify-center mb-4 border border-white/5 group-hover:bg-indigo-500/10 transition">
+                              <i class="fa-brands fa-docker text-xl text-indigo-400"></i>
+                         </div>
+                         <h3 class="text-white font-semibold text-sm mb-1">Isolation & Orchestration</h3>
+                         <p class="text-xs text-slate-500 font-mono">Docker, Containerization, Kubernetes, Helm Charts</p>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Serverless CI/CD Pipeline</h3>
-                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
-                        Automated the deployment of 50+ microservices using GitHub Actions and AWS Lambda, improving deployment frequency by 3x.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-[10px] font-bold uppercase tracking-wider">
-                        <span class="px-2 py-1 bg-slate-800 rounded">GitHub Actions</span>
-                        <span class="px-2 py-1 bg-slate-800 rounded">Python</span>
-                        <span class="px-2 py-1 bg-slate-800 rounded">Serverless</span>
+                    <div class="p-6 glass-card rounded-xl hover:border-indigo-500/30 transition duration-300 group">
+                         <div class="h-10 w-10 rounded-lg bg-indigo-500/5 flex items-center justify-center mb-4 border border-white/5 group-hover:bg-indigo-500/10 transition">
+                              <i class="fa-solid fa-cloud text-xl text-indigo-400"></i>
+                         </div>
+                         <h3 class="text-white font-semibold text-sm mb-1">Global Cloud Fabrics</h3>
+                         <p class="text-xs text-slate-500 font-mono">AWS Architecture, Elastic BeanStalk, GCP Infrastructure</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <div class="p-6 glass-card rounded-xl hover:border-indigo-500/30 transition duration-300 group">
+                         <div class="h-10 w-10 rounded-lg bg-indigo-500/5 flex items-center justify-center mb-4 border border-white/5 group-hover:bg-indigo-500/10 transition">
+                              <i class="fa-solid fa-code-merge text-xl text-indigo-400"></i>
+                         </div>
+                         <h3 class="text-white font-semibold text-sm mb-1">Continuous Integration</h3>
+                         <p class="text-xs text-slate-500 font-mono">GitHub Actions automation, Advanced CI/CD Runbooks</p>
+                    </div>
+                    <div class="p-6 glass-card rounded-xl hover:border-indigo-500/30 transition duration-300 group">
+                         <div class="h-10 w-10 rounded-lg bg-indigo-500/5 flex items-center justify-center mb-4 border border-white/5 group-hover:bg-indigo-500/10 transition">
+                              <i class="fa-solid fa-terminal text-xl text-indigo-400"></i>
+                         </div>
+                         <h3 class="text-white font-semibold text-sm mb-1">Declarative Infrastructure</h3>
+                         <p class="text-xs text-slate-500 font-mono">Terraform IaC, Shell Scripting, Linux Internals</p>
+                    </div>
+               </div>
+          </div>
+     </section>
 
-<!-- Footer section -->
+     <!-- Projects Section -->
+     <section id="projects" class="py-28 px-6 bg-[#060914]/90 border-t border-b border-white/5">
+          <div class="max-w-6xl mx-auto">
+               <div class="flex items-center space-x-4 mb-16">
+                    <span class="text-xs font-bold font-mono text-indigo-500 tracking-widest bg-indigo-500/10 px-2.5 py-1 rounded">03</span>
+                    <h2 class="text-2xl md:text-3xl font-bold text-white tracking-tight">Production Implementations</h2>
+                    <div class="h-[1px] bg-gradient-to-r from-white/10 to-transparent flex-grow"></div>
+               </div>
+               
+               <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Project 1 -->
+                    <div class="group relative rounded-2xl glass p-8 border border-white/5 hover:border-indigo-500/20 transition duration-300">
+                         <div class="flex justify-between items-start mb-6">
+                              <div class="p-3 bg-indigo-500/10 rounded-lg border border-indigo-500/20 text-indigo-400">
+                                   <i class="fa-solid fa-network-wired text-xl"></i>
+                              </div>
+                              <a href="https://github.com/shehabkazi-blip" target="_blank" class="text-slate-500 hover:text-white transition"><i class="fa-brands fa-github text-xl"></i></a>
+                         </div>
+                         <h3 class="text-lg font-bold text-white mb-2 group-hover:text-indigo-400 transition">Multi-Region Cloud Topologies (BongoDev Advanced Level)</h3>
+                         <p class="text-slate-400 text-sm mb-6 leading-relaxed font-light">
+                              Engineered high-availability core infrastructures and complex cluster scaling strategies using **Terraform**. Eliminated system deployment bottleneck metrics and structurally cut down catastrophic server recovery times by <span class="text-emerald-400 font-semibold font-mono">40%</span>.
+                         </p>
+                         <div class="flex flex-wrap gap-1.5 text-[10px] font-mono tracking-wider">
+                              <span class="px-2.5 py-1 bg-white/5 text-slate-400 rounded border border-white/5">Terraform IaC</span>
+                              <span class="px-2.5 py-1 bg-white/5 text-slate-400 rounded border border-white/5">Kubernetes</span>
+                              <span class="px-2.5 py-1 bg-white/5 text-slate-400 rounded border border-white/5">Cloud Architectures</span>
+                         </div>
+                    </div>
 
-    <footer id="contact" class="py-20 border-t border-white/5">
-        <div class="max-w-4xl mx-auto text-center px-6">
-            <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400 mb-4">Let's Build Something Scalable</h2>
-            <p class="text-slate-400 mb-8">Currently looking for new challenges in the SRE and DevOps space.</p>
-            <div class="flex justify-center space-x-6 text-2xl">
-                <a href="https://www.linkedin.com/in/shehab-engineer/" target="_blank" class="text-slate-400 hover:text-indigo-400 transition"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/shehabkazi-blip" target="_blank" class="text-slate-400 hover:text-indigo-400 transition"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:shehabkazi@gmail.com" class="text-slate-400 hover:text-indigo-400 transition"><i class="fa-solid fa-envelope"></i></a>
-            </div>
-            <p class="mt-12 text-xs text-slate-600 code-font">Built with 💖 | &copy; All Rights Reserved, Md Shehab Kazi</p>
-        </div>
-    </footer>
+                    <!-- Project 2 -->
+                    <div class="group relative rounded-2xl glass p-8 border border-white/5 hover:border-cyan-500/20 transition duration-300">
+                         <div class="flex justify-between items-start mb-6">
+                              <div class="p-3 bg-cyan-500/10 rounded-lg border border-cyan-500/20 text-cyan-400">
+                                   <i class="fa-solid fa-bolt text-xl"></i>
+                              </div>
+                              <a href="https://github.com/shehabkazi-blip" target="_blank" class="text-slate-500 hover:text-white transition"><i class="fa-brands fa-github text-xl"></i></a>
+                         </div>
+                         <h3 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-400 transition">Programmatic Pipeline & Telemetry Fabrics</h3>
+                         <p class="text-slate-400 text-sm mb-6 leading-relaxed font-light">
+                              Architected syntax verification pipelines and continuous deployment routines through **GitHub Actions**. Simultaneously deployed secure server-side tracking (Meta CAPI) layers, accelerating product data collection speeds by <span class="text-cyan-400 font-semibold font-mono">3x</span> safely.
+                         </p>
+                         <div class="flex flex-wrap gap-1.5 text-[10px] font-mono tracking-wider">
+                              <span class="px-2.5 py-1 bg-white/5 text-slate-400 rounded border border-white/5">GitHub Actions</span>
+                              <span class="px-2.5 py-1 bg-white/5 text-slate-400 rounded border border-white/5">Server-Side Tracking</span>
+                              <span class="px-2.5 py-1 bg-white/5 text-slate-400 rounded border border-white/5">Bash Automation</span>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
 
+     <!-- Footer / Contact Section -->
+     <footer id="contact" class="py-32 relative overflow-hidden">
+          <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-indigo-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+          <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
+               <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">Initialize Connection Parameters</h2>
+               <p class="text-slate-400 max-w-md mx-auto mb-10 font-light text-sm md:text-base">
+                    If your engineering operations require resilient cloud blueprints, automated CI/CD loop architectures, or modern infrastructure oversight, drop a line.
+               </p>
+               
+               <div class="flex justify-center items-center space-x-4 mb-16">
+                    <a href="https://www.linkedin.com/in/shehab-engineer/" target="_blank" class="h-12 w-12 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition duration-300"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                    <a href="https://github.com/shehabkazi-blip" target="_blank" class="h-12 w-12 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition duration-300"><i class="fa-brands fa-github text-xl"></i></a>
+                    <a href="mailto:shehabkazi@gmail.com" class="h-12 w-12 rounded-lg bg-white/5 border border-white/5 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:border-indigo-500/30 hover:bg-indigo-500/5 transition duration-300"><i class="fa-solid fa-envelope text-xl"></i></a>
+               </div>
+               
+               <div class="text-[11px] text-slate-600 font-mono tracking-wider space-y-2">
+                    <p>Runtime Platform // Built with Tailwind CSS & HTML5 Ecosystem</p>
+                    <p>&copy; 2026 Md Shehab Kazi — Secure Node Instance</p>
+               </div>
+          </div>
+     </footer>
 </body>
-    </html>
+</html>
